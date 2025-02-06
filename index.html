@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FresherTalk Invoice</title>
+    <style>
+        * {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 18px;
+        }
+
+        body {
+        
+            margin: 50px ;
+            padding: 20%;
+            padding-top: 50px;
+            
+        }
+        #head1{
+           text-align: center;
+           font-size: 40px;
+
+        }
+
+        .header {
+            margin-bottom: 20px;
+            
+        }
+        #rg1{
+          
+            display: flex;
+            justify-content: space-around;
+        }
+        .rg1-c{
+            font-size: 20px;
+        }
+        #rg2{
+            text-align: center;
+        }
+        #inv{
+
+            display: flex;
+            justify-content: space-between;
+        }
+        .separator {
+            border-top: 3px solid #000;
+            margin: 15px 0;
+        }
+
+        .invoice-details {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        thead{
+            text-align: left;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+       
+
+        
+        .tbhs{
+
+            text-align: right;
+        }
+        .amount-section {
+            margin-left: auto;
+            width: 300px;
+            padding: 10px;
+        }
+
+        .terms-list {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+
+        .note {
+            font-style: italic;
+            margin-top: 15px;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2 id="head1">FresherTalk Digital Solutions</h2>
+        <br>
+        <div class="company-info">
+            <div id="rg1">
+                <div class="rg1-c"><B>Registration No.:</B> UPSA66715491</div>
+                <div class="rg1-c"><B>MSME URN:</B> UDYAM-UP-30-0037331</div>
+            </div>
+            <div id="rg2">
+                <div><br><b>GSTIN:</b> 09BMEPT8758F1ZD</div>
+                <br>
+                <div>Aurangabad, Ghazipur, 233001</div>
+                <br>
+                <div>Uttar Pradesh</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="separator"></div>
+    <div id="inv">
+        <div class="invoice-to">
+            <div><B>Invoice To:</B></div>
+
+            <div>Test User for Software Testing</div>
+            <div> <b>Mobile Number:</b> 0000000000</div>
+            <div><b>Address:</b> Ghazipur, Uttar Pradesh, India</div>
+        </div>
+
+        <div class="invoice-details">
+            <div>
+                <div><b>Invoice Number:</b> FT-CPRSMTP-202502-01</div>
+                <div><b>Invoice Date:</b> 2025-02-05</div>
+                <div><b>Payment Type:</b> Cash (Test Data)</div>
+            </div>   
+        </div>
+    </div>
+    
+
+    <table>
+        <thead>
+            <div id="tab-head">
+                 <tr>
+                <th>Products/ Services</th>
+                <th>HSN/SAC</th>
+                <th>Quantity</th>
+                <th>Rate</th>
+                <th>Tax %</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Comprehensive Placement-Ready Six Month Training Program</td>
+                <td>999299</td>
+                <td>1</td>
+                <td>₹20338.00</td>
+                <td>18%</td>
+                <td>₹23998.84</td>
+            </tr>
+            </div>
+           
+            <div id="tab-body">
+                <tr>
+                <th class="tbhs" colspan="4">Subtotal:</th><td>₹20338.00</td>
+                </tr>
+                <tr><th class="tbhs" colspan="4">GST:</th><td> ₹3660.84</td></tr>
+                <tr><th class="tbhs" colspan="4">Total Amount:</th><td>₹23998.84</td></tr>
+            </div>
+            
+        </tbody>
+    </table>
+
+    
+
+    <div class="terms">
+        <h3>Terms & Conditions:</h3>
+        <ol class="terms-list">
+            <li>All taxes (GST) are charged as per Government of India regulations.</li>
+            <li>Services must be availed within 6 months from the invoice date.</li>
+            <li>Disputes, if any, shall be subject to the jurisdiction of Ghazipur, Uttar Pradesh.</li>
+            <li>FresherTalk Digital Solutions reserves the right to revoke services without informing anything.</li>
+            <li>All intellectual property rights remain with FresherTalk Digital Solutions until full payment is received.</li>
+            <li>Any discrepancy in this invoice must be reported within 7 working days.</li>
+            <li>No refunds will be processed for services already delivered.</li>
+            <li>Prices are exclusive of any third-party charges not mentioned in this invoice.</li>
+        </ol>
+    </div>
+
+    <p class="note">Note: This is a computer-generated invoice. No physical signature required.</p>
+</body>
+</html>
