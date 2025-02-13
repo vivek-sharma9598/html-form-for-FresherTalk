@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    body{
+        background-image: url(bg.jpg);
+        background-size: cover;
+    }
+        .container{
+            box-shadow: 20px 20px 10px whitesmoke , -2px -2px 5px whitesmoke;
+            width: 30%;
+            height: auto;
+            margin-top: 154px;
+            margin-left: 35%;
+            padding: 20px;
+            overflow: auto;
+        }
+        button{
+            width: 70%;
+            height: 40px;
+            background: blue;
+            color: wheat;
+            
+        }
+        #bdiv{
+            display: flex;
+            gap: 10px;
+        }
+
+        input[type="text"]{
+            color: wheat;
+            background: rgba(0, 0, 0, 0.2);
+            width: 98%;
+            height: 30px;
+            border: none;
+            box-shadow: 0px 0px 10px red;
+            
+        }
+        .l1{
+            font-family: sans-serif;
+            color: wheat;
+            font-size: 30px;
+            text-align: center;
+            margin-left: 27%;
+        }
+
+        p{
+            color: white;
+            font-size: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <label for="Num" class="l1">Enter a Number</label><br>
+    <input type="text" name="" id="num">
+    <br><br>
+    <div id="bdiv">
+    <button type="button"  onclick="fact()">Factotial</button><br><br>
+    <button type="button" onclick="prime()">Check Prime or Not</button><br><br>
+    <button type="button" onclick="even()">Check Even or Odd</button><br><br></div>
+    <p id="p1">Welcome </p>
+</div>
+    <script>
+        
+        function fact(){
+                let x=document.getElementById("num").value;
+                let i,fa=1;
+                for(i=1;i<=x;i++)
+                { fa=fa*i;}
+                document.getElementById("p1").innerHTML=fa;
+
+            }
+
+            function prime(){
+                let x=document.getElementById("num").value;
+                let i, count=0;
+                for(i=1;i<=x;i++){
+                    if(x%i==0){count++;}
+                }
+                if(count==2){document.getElementById("p1").innerHTML="Given number is Prime number..."}
+                else{document.getElementById("p1").innerHTML="Given number is Not Prime number..."}
+
+            }
+
+            function even(){
+                let x=document.getElementById("num").value;
+                if(x%2==0){document.getElementById("p1").innerHTML="Given number is Even number...."}
+                else{document.getElementById("p1").innerHTML="Given number is Odd number...."}
+            }
+
+    </script>
+</body>
+</html>
